@@ -11,18 +11,18 @@ import org.junit.runners.Parameterized.Parameters;
  * warnings; see https://github.com/typetools/checker-framework/blob/master/checker/tests/README .
  */
 public class ExampleTest extends CheckerFrameworkPerDirectoryTest {
-  public ExampleTest(List<File> testFiles) {
-    super(
-        testFiles,
-        org.checkerframework.checker.empty.EmptyChecker.class,
-        "example",
-        "-Anomsgtext",
-        "-Astubs=stubs/",
-        "-nowarn");
-  }
+    public ExampleTest(List<File> testFiles) {
+        super(
+                testFiles,
+                org.checkerframework.checker.empty.EmptyChecker.class,
+                "example",
+                "-Anomsgtext",
+                "-Astubs=stubs/",
+                "-nowarn");
+    }
 
-  @Parameters
-  public static String[] getTestDirs() {
-    return new String[] {"example"};
-  }
+    @Parameters
+    public static String[] getTestDirs() {
+        return new String[] {"example"};
+    }
 }

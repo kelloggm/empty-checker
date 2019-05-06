@@ -14,5 +14,4 @@ class AssignmentTest {
         // :: error: assignment.type.incompatible
         Object object = new Object();
     }
-
 }
